@@ -17,6 +17,8 @@
 development:
   adapter: postgresql
   encoding: unicode
+  username: <%= ENV.fetch('PG_USERNAME', 'postgres') %>
+  host: <%= ENV["PG_HOST"] %>
   database: schemaless-pg_development
   min_messages: WARNING
   pool: 5

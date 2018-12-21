@@ -2,7 +2,7 @@
 
 data_sources:
   main:
-    url: "<%= ENV["DATABASE_URL"] || "postgres://hooopo@localhost:5432/schemaless-pg_development" %>"
+    url: "<%= ENV["PG_URL"] || "postgres://hooopo@localhost:5432/schemaless-pg_development" %>"
     schemas:
       - sl_view
     # statement timeout, in seconds
